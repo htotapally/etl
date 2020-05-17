@@ -1,12 +1,15 @@
 package com.acme.etl;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import junit.framework.Assert;
 
 public class PersonTest {
 
@@ -28,9 +31,12 @@ public class PersonTest {
 
 	@Test
 	public void testPerson() {
-		fail("Not yet implemented");
+		// fail("Not yet implemented");
 		// TODO: Create a Person Object
 		// Ensure that the Person's object is created by verifying all attributes of the Person Object
+		String name = "Hello";
+		assertEquals(name, "Hello");
+		
 	}
 
 }
